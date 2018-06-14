@@ -62,3 +62,23 @@ while True:
     except StopIteration as e:
         print(e.value)
         break
+
+
+def consumer(name):
+    print("%s 开始吃包子了" % name)
+    while True:
+        baozi = yield
+        print("包子%s来了，被%s吃了" % (baozi, name))
+
+
+cs = consumer("PQ")
+cs.__next__()
+# 可以发送数值并唤起yield所在方法
+cs.send("small baozi")
+
+# 使用iter可以将list dist str等Iterable转换成Iterator 迭代器
+e = iter({1, 2, 3, 4})
+eValue = e.__next__()
+print(eValue)
+
+
