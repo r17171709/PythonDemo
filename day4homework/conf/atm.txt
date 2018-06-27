@@ -1,0 +1,1 @@
+{"任宇": {"name": "任宇", "password": "123", "credit_lines": 150000, "remaining_sum": 91, "isadmin": true, "state": false}, "耿益": {"name": "耿益", "password": "123", "credit_lines": 15000, "remaining_sum": 8, "isadmin": false, "state": true}}
